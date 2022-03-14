@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Job Posts</h1>
+    
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Slug</th>
+      </tr>
+      <tr *ngFor="let job of jobs">
+        <td>{{ job.id }}</td>
+        <td>{{ job.title }}</td>
+        <td>{{ job.slug }}</td>
+      </tr>
+    </table>
+ </div>
